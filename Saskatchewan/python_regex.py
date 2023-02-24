@@ -11,4 +11,11 @@ community = "Prince Albert"
 
 new = add.split(community)
 
-print(new[0][:-1], community + new[1])
+# print(new[0][:-1], community + new[1])
+
+abc = community + new[1]
+
+print(abc)
+
+for page in range(1, 11):
+    print(page)

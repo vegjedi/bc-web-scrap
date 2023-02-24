@@ -13,47 +13,48 @@ options.add_experimental_option('detach', True)
 
 driver = webdriver.Chrome(options=options, executable_path="chromedriver")
 
-# link = []
-# operator = []
-# name = []
-# bed = []
-# address = []
-# phone = []
+link = []
+operator = []
+name = []
+bed = []
+address_1 = []
+address_2 = []
+full_address = []
+phone = []
+city = []
+facilityNumber = []
+info = []
 
-driver.get("http://personalcarehomes.saskatchewan.ca/PersonalCareHomes/Table?FacilityCountLimit=0&ProgramAreaName=PersonalCareHomes&SortBy=FacilityName&pageNumber=1")
+for page in range(1, 11):
+    driver.get(f"http://personalcarehomes.saskatchewan.ca/PersonalCareHomes/Table?FacilityCountLimit=0&ProgramAreaName=PersonalCareHomes&SortBy=FacilityName&pageNumber={page}")
+    time.sleep(3)
 
-time.sleep(2)
+    for element in driver.find_elements(By.CLASS_NAME, "hovereffect"):
+        temp_link= "http://personalcarehomes.saskatchewan.ca" + re.search(r"'([^']*)'",(element.get_attribute("onclick"))).group(1)
+        link.append(temp_link)
+        
+        bed.append(element.find_element(By.CLASS_NAME, "capacity").text)
+        name.append(element.find_element(By.CLASS_NAME, "facilityName").text)
+        operator.append(element.find_element(By.CLASS_NAME, "primaryOwner").text)
+        phone.append(element.find_element(By.CLASS_NAME, "phoneNumber").text)
+        facilityNumber.append(element.find_element(By.CLASS_NAME, "facilityNumber").text)
+        info.append(element.find_element(By.CLASS_NAME, "tags").text)
 
-for element in driver.find_elements(By.CLASS_NAME, "hovereffect"):
-    link= "http://personalcarehomes.saskatchewan.ca" + re.search(r"'([^']*)'",(element.get_attribute("onclick"))).group(1)
-    print(link)
-    print("capacity", element.find_element(By.CLASS_NAME, "capacity").text)
-    print("community", element.find_element(By.CLASS_NAME, "community").text)
-    print("facility", element.find_element(By.CLASS_NAME, "facilityName").text)
-    print("Address", element.find_element(By.CLASS_NAME, "siteAddress").text)
-    print("primaryOwner", element.find_element(By.CLASS_NAME, "primaryOwner").text)
-    print("phoneNumber", element.find_element(By.CLASS_NAME, "phoneNumber").text)
-    print("facilityNumber", element.find_element(By.CLASS_NAME, "facilityNumber").text)
-    print("Info", element.find_element(By.CLASS_NAME, "tags").text)
-    print(r"\n")
+     
+        temp_address = element.find_element(By.CLASS_NAME, "siteAddress").text
+        full_address.append(temp_address)
+        temp_city = element.find_element(By.CLASS_NAME, "community").text
+        print(temp_city, temp_address)
+        city.append(temp_city)   
+        split_address = temp_address.split(temp_city)
+        if temp_address != split_address[0]:
+            address_1.append(split_address[0][:-1])
+            address_2.append(temp_city + split_address[1])
+        else:
+            address_1.append("None")
+            address_2.append("None")
 
-
-# for id in id:
-#     temp_link = f"https://standardsandlicensing.alberta.ca/detail_page.html?ID={id}"
-#     driver.get(temp_link)
-#     time.sleep(3)
-
-#     link.append(temp_link)
-#     operator.append(driver.find_element(By.ID, "OPERATOR").text)
-#     facility.append(driver.find_element(By.ID, "FACILITY_TYPE").text)
-#     name.append(driver.find_element(By.ID, "FACILITY_NAME").text)
-#     bed.append(driver.find_element(By.ID, "UNITS").text)
-#     address_1.append(driver.find_element(By.ID, "ADDRESSLINE1").text)
-#     address_2.append(driver.find_element(By.ID, "ADDRESSLINE2").text)
-#     cityline.append(driver.find_element(By.ID, "CITYLINE").text)
-#     phone.append(driver.find_element(By.ID, "PHONE").text)
-
-# df = pd.DataFrame(list(zip(link, operator, facility, name, bed, address_1, address_2, cityline, phone)), columns=["link", "operator", "facility", "name", "bed", "address_1", "address_2", "cityline", "phone"])
-# df.to_csv('/Users/jedi/Desktop/sample_data.csv')
+df = pd.DataFrame(list(zip(link, operator, name, bed, address_1, address_2, full_address, phone, city, facilityNumber, info)), columns=["link", "operator", "name", "bed", "address_1", "address_2", "full_address", "phone", "city", "facilityNumber", "info"])
+df.to_csv('/Users/jedi/Desktop/sample_data.csv')
 
 driver.close()
