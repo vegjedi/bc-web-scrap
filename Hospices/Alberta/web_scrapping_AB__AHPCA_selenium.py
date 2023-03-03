@@ -18,14 +18,14 @@ unwanted = ["https://ahpca.ca/ahpca-resource-directory/", "https://ahpca.ca/ahpc
 
 for i in range(3):
     driver.get(f"https://ahpca.ca/ahpca-resource-directory/wpbdp_category/hospices/page/{i+1}/")
-    time.sleep(1)
+    time.sleep(2)
     for temp_link in driver.find_elements(By.XPATH, '//*[@id]/div/div[1]/div/a'):
         link.append(temp_link.get_attribute("href"))
 
 for i in link:
     if i not in unwanted:
         ahpca_link.append(i)
-
+name = []
 area = []
 info = []
 website = []
@@ -35,33 +35,65 @@ address = []
 for individual_link in ahpca_link:
     print(individual_link)
     driver.get(individual_link)
-    time.sleep(2)
+    time.sleep(3)
 
-    for temp_area in driver.find_elements(By.XPATH, '//*[@id]/div[2]/div[2]/div[1]/div/a[1]'):
-        area.append(temp_area.text)
-        print(temp_area.text)
+    for temp_name in driver.find_elements(By.CLASS_NAME, "sc_layouts_title_caption"):
+        name.append(temp_name.text)
+        print(temp_name.text)
 
-    for temp_info in driver.find_elements(By.XPATH, '//*[@id]/div[2]/div[2]/div[2]/div'):
-        info.append(temp_info.text.split("\n")[0])
-        print(temp_info.text.split("\n")[0])
+    temp_area = driver.find_elements(By.XPATH, '//*[@id]/div[2]/div[2]/div[1]/div/a[1]')
+    if len(temp_area) == 0:
+        print("no area")
+        area.append("no area")
+    else:
+        area.append(temp_area[0].text)
+        print(temp_area[0].text)
 
-    for temp_website in driver.find_elements(By.XPATH, '//*[@id]/div[2]/div[2]/div[3]/div/a'):
-        website.append(temp_website.get_attribute("href"))
-        print(temp_website.get_attribute("href"))
+    temp_info = driver.find_elements(By.XPATH, '//*[@id]/div[2]/div[2]/div[2]/div')
+    if len(temp_info) == 0:
+        print("no info")
+        info.append("no info")
+    else:
+        info.append(temp_info[0].text.split("\n")[0])
+        print(temp_info[0].text.split("\n")[0])
 
-    for temp_phone in driver.find_elements(By.XPATH, '//*[@id]/div[2]/div[2]/div[4]/div'):
-        phone.append(temp_phone.text)
-        print(temp_phone.text)
+    temp_website = driver.find_elements(By.XPATH, '//*[@id]/div[2]/div[2]/div[3]/div/a')
+    if len(temp_website) == 0:
+        print("no website") 
+        website.append("no website")
+    else:
+        website.append(temp_website[0].get_attribute("href"))
+        print(temp_website[0].get_attribute("href"))
 
-    for temp_address in driver.find_elements(By.XPATH, '//*[@id]/div[2]/div[2]/div[5]/div'):
-        address.append(temp_address.text)
-        print(temp_address.text)
+    temp_phone = driver.find_elements(By.XPATH, '//*[@id]/div[2]/div[2]/div[4]/div')
+    if len(temp_phone) == 0:
+        print("no phone")
+        phone.append("no phone")
+    else:
+        phone.append(temp_phone[0].text)
+        print(temp_phone[0].text)
+
+    temp_address = driver.find_elements(By.XPATH, '//*[@id]/div[2]/div[2]/div[5]/div')
+    if len(temp_address) == 0:
+        print("no address")
+        address.append("no addresss")
+    else:
+        address.append(temp_address[0].text)
+        print(temp_address[0].text)
     
-    print("=== end of block ===")
+    print("===============")
 
-print(len(ahpca_link), len(area), len(info), len(website), len(phone), len(address))
+print(len(ahpca_link), len(name), len(area), len(info), len(website), len(phone), len(address))
 
-df = pd.DataFrame(list(zip(ahpca_link, area, info, website, phone, address)), columns=["ahpca_link", "area", "info", "website", "phone", "address"])
+print(ahpca_link)
+print(name)
+print(area)
+print(info)
+print(website)
+print(phone)
+print(address)
+
+df = pd.DataFrame(list(zip(ahpca_link, name, area, info, website, phone, address)), columns=["ahpca_link", "name", "area", "info", "website", "phone", "address"])
 df.to_csv('/Users/jedi/Desktop/sample_data.csv')
 
 driver.close()
