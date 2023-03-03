@@ -16,8 +16,8 @@ name = []
 website = []
 phone = []
 
-driver.get("https://sheltersafe.ca/alberta/")
-time.sleep(7)
+driver.get("https://sheltersafe.ca/manitoba/")
+time.sleep(2)
 
 for temp_name in driver.find_elements(By.XPATH, '//*[@id="gmwd_container_1"]/div[3]/div[2]/div[2]/div/div[1]'):
     name.append(temp_name.text.replace("*", ""))
