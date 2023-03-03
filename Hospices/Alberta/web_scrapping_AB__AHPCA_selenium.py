@@ -11,67 +11,57 @@ options = Options()
 options.add_experimental_option('detach', True)
 driver = webdriver.Chrome(options=options, executable_path="chromedriver")
 
-name = []
-region = []
 link = []
+ahpca_link = []
 
-type = []
-crisis_line = []
-business_line = []
-email = []
+unwanted = ["https://ahpca.ca/ahpca-resource-directory/", "https://ahpca.ca/ahpca-resource-directory/?wpbdp_view=all_listings", "https://ahpca.ca/ahpca-resource-directory/start-community-hospice-group/"]
+
+for i in range(3):
+    driver.get(f"https://ahpca.ca/ahpca-resource-directory/wpbdp_category/hospices/page/{i+1}/")
+    time.sleep(1)
+    for temp_link in driver.find_elements(By.XPATH, '//*[@id]/div/div[1]/div/a'):
+        link.append(temp_link.get_attribute("href"))
+
+for i in link:
+    if i not in unwanted:
+        ahpca_link.append(i)
+
+area = []
+info = []
 website = []
+phone = []
+address = []
 
-driver.get("https://acws.ca/shelters/")
-time.sleep(3)
+for individual_link in ahpca_link:
+    print(individual_link)
+    driver.get(individual_link)
+    time.sleep(2)
 
-for temp_name in driver.find_elements(By.CLASS_NAME, "font-purple"):
-    # print(temp_name.text)
-    name.append(temp_name.text)
+    for temp_area in driver.find_elements(By.XPATH, '//*[@id]/div[2]/div[2]/div[1]/div/a[1]'):
+        area.append(temp_area.text)
+        print(temp_area.text)
 
-name = name[2:] # remove first 2 unwanted name in the list
+    for temp_info in driver.find_elements(By.XPATH, '//*[@id]/div[2]/div[2]/div[2]/div'):
+        info.append(temp_info.text.split("\n")[0])
+        print(temp_info.text.split("\n")[0])
 
-for temp_region in driver.find_elements(By.CLASS_NAME, "font-light-purple"):
-    # print(temp_region.text)
-    region.append(temp_region.text)
+    for temp_website in driver.find_elements(By.XPATH, '//*[@id]/div[2]/div[2]/div[3]/div/a'):
+        website.append(temp_website.get_attribute("href"))
+        print(temp_website.get_attribute("href"))
 
-for temp_link in driver.find_elements(By.XPATH, '//*[@id="search-results"]/div/div/div/div/div[3]/div[1]/h4/a'):
-    # print(temp_link.get_attribute("href"))
-    link.append(temp_link.get_attribute("href"))
+    for temp_phone in driver.find_elements(By.XPATH, '//*[@id]/div[2]/div[2]/div[4]/div'):
+        phone.append(temp_phone.text)
+        print(temp_phone.text)
 
-for acws_link in link:
-    driver.get(acws_link)
-    time.sleep(0.5)
-    temp_type = driver.find_element(By.XPATH, '//*[@id="page"]/header/div/div/div/div/div[1]/div/h2/span[1]').text
-    type.append(temp_type)
+    for temp_address in driver.find_elements(By.XPATH, '//*[@id]/div[2]/div[2]/div[5]/div'):
+        address.append(temp_address.text)
+        print(temp_address.text)
+    
+    print("=== end of block ===")
 
-    result = driver.find_elements(By.XPATH, '//*[@id="main"]/div/div/div/section[1]/div/div/div[1]/div/div/a')
-    print("result length is", len(result))
+print(len(ahpca_link), len(area), len(info), len(website), len(phone), len(address))
 
-    crisis_line.append(result[0].text)
-    print("crisis line", result[0].text)
-
-    if len(result) == 2:
-        business_line.append(result[1].text)
-        print("business line", result[1].text)
-        email.append("No email")
-        website.append("No website")
-    if len(result) == 3:
-        business_line.append(result[1].text)
-        print("business line", result[1].text)
-        email.append(result[2].text)
-        print("email", result[2].text)
-        website.append("No website")
-    if len(result) == 4:
-        business_line.append(result[1].text)
-        print("business line", result[1].text)
-        email.append(result[2].text)
-        print("email", result[2].text)
-        website.append(result[3].text)
-        print("website", result[3].text)     
-
-print(len(name), len(region), len(link), len(type), len(crisis_line), len(business_line), len(email), len(website))
-
-df = pd.DataFrame(list(zip(name, region, link, type, crisis_line, business_line, email, website)), columns=["name", "region", "link", "type", "crisis_line", "business_line", "email", "website"])
+df = pd.DataFrame(list(zip(ahpca_link, area, info, website, phone, address)), columns=["ahpca_link", "area", "info", "website", "phone", "address"])
 df.to_csv('/Users/jedi/Desktop/sample_data.csv')
 
 driver.close()
