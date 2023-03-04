@@ -19,7 +19,7 @@ phone = []
 address = []
 bed = []
 
-driver.get("https://www.chpca.ca/listings/?loc=&prv%5B%5D=268&go=true#results")
+driver.get("https://www.chpca.ca/listings/?loc=&prv%5B%5D=277&go=true#results")
 time.sleep(2)
 
 for temp_link in driver.find_elements(By.XPATH, '//*[@id="results"]/div/div[5]/a'):
