@@ -16,8 +16,6 @@ for i in range(len(name)):
     temp_dict = dict(facility_name = name[i], phone_no = phone[i], add_line_1= line_1[i], add_line_2 = line_2[i])
     records.append(temp_dict)
 
-print(records)
+label_writer = LabelWriter("item_template.html", default_stylesheets=("style.css",))
 
-# label_writer = LabelWriter("item_template.html", default_stylesheets=("style.css",))
-
-# label_writer.write_labels(records, target='/Users/jedi/Desktop/qrcode_and_label.pdf')
+label_writer.write_labels(records, target='/Users/jedi/Desktop/qrcode_and_label.pdf')
