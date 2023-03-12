@@ -1,0 +1,269 @@
+,street_1,street_2,split_city,postal,factor
+0,185 Despins Street,nil,Winnipeg,MB R2H 2B3,3
+1,233 St Phillips Dr,nil,Arborg,MB R0C 0A0,3
+2,PO Box 110,1 Steenson Ave,Ashern,MB R0C 0E0,4
+3,Box 128,531 Elizabeth St,Baldur,MB R0K 0B0,4
+4,Box 5000,86 Ellis Dr,Killarney,MB R0K 1G0,4
+5,190 Fort St,nil,Winnipeg,MB R3C 1C9,3
+6,200 1St E,nil,Benito,MB R0L 0C0,3
+7,Box 10,96 1st Ave,Gimli,MB R0C 1B0,4
+8,212 Manchester Ave,nil,Selkirk,MB R1A 0B6,3
+9,1045 Concordia Ave,nil,Winnipeg,MB R2K 3S7,3
+10,399 Hospital St,nil,Steinbach,MB R5G 0E6,3
+11,Box 2000,843 Gertrude St,Birtle,MB R0M 0C0,4
+12,Box 889,305 Mill Rd,Boissevain,MB R0K 0E0,4
+13,120 4 Ave SW,nil,Carman,MB R0G 0J0,3
+14,Box 447,103 Kellett St. S.,Deloraine,MB R0M 0M0,4
+15,1325 Erin St,nil,Winnipeg,MB R3E 3R6,3
+16,Box 2000,340 Toronto St,Carberry,MB R0K 0H0,4
+17,5501 Roblin Blvd,nil,Winnipeg,MB R3R 0G8,3
+18,1000 Molson St,nil,Winnipeg,MB R2K 4L5,3
+19,Box 940,15 Hospital St,Roblin,MB R0L 1P0,4
+20,2161 Sioux Valley Reserve,nil,Griswold,MB R0M 0S0,3
+21,625 3rd St SW,nil,Dauphin,MB R7N 1R7,3
+22,2109 Portage Avenue,nil,Winnipeg,MB R3J 0L3,3
+23,Box 447,109 Kellett St,Deloraine,MB R0M 0M0,4
+24,510 6th St,nil,Brandon,MB R7A 3N9,3
+25,171 Donwood Drive,nil,Winnipeg,MB R2G 0V9,3
+26,150 9th St SE,nil,Portage la Prairie,MB R1N 3T6,3
+27,515 Mission St,Box 420,Ste. Rose,MB R0L 1S0,4
+28,646 James Ave,nil,Beausejour,MB R0E 0C0,3
+29,240 5th Ave NE,nil,Altona,MB R0G 0B0,3
+30,Box 70,12 Antrim St.,Elkhorn,MB R0M 0N0,4
+31,26 Main St,nil,Emerson,MB R0A 0L0,3
+32,60 Queen Elizabeth Rd.,Box 250,Erickson,MB R0J 0P0,4
+33,40 Railway Avenue,nil,Eriksdale,MB R0C 0W0,3
+34,1351 13St,nil,Brandon,MB R7A 4S6,3
+35,Box 119,7 Chalet Dr,Fisher Branch,MB R0C 0Z0,4
+36,Box 340,50 Church St,Flin Flon,MB R8A 1K7,4
+37,40 Rogers St.,nil,Notre Dame de Lourdes,MB R0G 1M0,3
+38,450 River Rd,nil,Winnipeg,MB R2M 5M4,3
+39,1275 Burrows Ave,nil,Winnipeg,MB R2X 0B8,3
+40,PO Box 261,nil,Oxford House,MB R0B 1C0,3
+41,Box 308,nil,Pine Falls,MB R0E 1M0,3
+42,100 Cutforth St. N.,Box 368,Gilbert Plains,MB R0L 0X0,4
+43,Box 2000,15 Gillam Dr,Gillam,MB R0B 0L0,4
+44,Box 310,219 Murray Ave,Glenboro,MB R0K 0X0,4
+45,1679 Pembina Hwy,nil,Winnipeg,MB R3T 2G6,3
+46,2280 St Mary's Rd,nil,Winnipeg,MB R2N 3Z6,3
+47,811 School Rd,nil,Winnipeg,MB R2Y 0S8,3
+48,162 3rd Ave SE,nil,Teulon,MB R0C 3B0,3
+49,308 Jackson Street,Box 130,Grandview,MB ROL IWO,4
+50,177 Birch Ave,nil,Hamiota,MB R0M 0T0,3
+51,Box 280,617 River Ave,Hartney,MB R0M 0X0,4
+52,3555 Portage Ave,nil,Winnipeg,MB R3K 0X2,3
+53,930 26th St,nil,Brandon,MB R7B 2B8,3
+54,165 Aberdeen Avenue,nil,Winnipeg,MB R2W 1T9,3
+55,1970 Henderson Hwy,nil,Winnipeg,MB R2G 1P2,3
+56,PO Box 28,680 Pine Dr,Oakbank,MB R0E 1J0,4
+57,75 McIntosh St E,nil,Lac du Bonnet,MB R0E 1A0,3
+58,24 9th St SE,nil,Portage la Prairie,MB R1N 3V4,3
+59,97 1st Street South,nil,Lundar,MB R0C 1Y0,3
+60,1081 Andrews St,nil,Winnipeg,MB R2V 2G9,3
+61,2040 Camp St,Box 2030,Lynn Lake,Manitoba R0B 0W0,4
+62,87 Grafton St,nil,MacGregor,MB R0H 0R0,3
+63,500 Mandalay Dr,nil,Winnipeg,MB R2P 1V4,3
+64,Box 250,nil,McCreary,MB R0J 1B0,3
+65,Box 10790,56 Kiche Maskanow,Opaskwayak,MB R0B 2J0,4
+66,577 St Anne's Rd,nil,Winnipeg,MB R2M 3G5,3
+67,Box 459,147 Summit St,Melita,MB R0M 1L0,4
+68,235 Park St,nil,Grunthal,MB R0A 0R0,3
+69,280 Balderstone Rd,nil,West Saint Paul,MB R4A 4A6,3
+70,138 3rd Ave SW,nil,Minnedosa,MB R0J 1E0,3
+71,99 Cornish Avenue,nil,Winnipeg,MB R3C 1A2,3
+72,44 Furby St,nil,Winnipeg,MB R3C 2A1,3
+73,526 Mary St.,Box 490,Shoal Lake,MB R0J 1Z0,4
+74,500 Veterans Way,nil,Neepawa,MB R0J 1H0,3
+75,Box 460,nil,Nelson House,MB R0B 1A0,3
+76,100A Heritage Trail,nil,Niverville,MB R0A 0A1,3
+77,274 Bracken St,nil,Flin Flon,MB R8A 1P4,3
+78,879 Thompson Dr,nil,Thompson,MB R8N 0A9,3
+79,2395 Ness Ave,nil,Winnipeg,MB R3J 1A5,3
+80,Box 366,nil,Fisher River,MB R0C 1S0,3
+81,301 Redonda St,nil,Winnipeg,MB R2C 1L7,3
+82,232 Carrie St,nil,Manitou,MB R0G 1G0,3
+83,285 Pembina Hwy,nil,Winnipeg,MB R3L 2E1,3
+84,Bldg 305 Rossville,nil,Norway House,MB R0B 1B0,3
+85,70 Poseidon Bay,nil,Winnipeg,MB R3M 3E5,3
+86,424 Broadway Ave,nil,Pilot Mound,MB R0G 1P0,3
+87,133 Manchester Ave,nil,Selkirk,MB R1A 0B5,3
+88,136 Ottawa Ave,nil,Morris,MB R0G 1K0,3
+89,Box 320,nil,St. Pierre-Jolys,MB R0A 1V0,3
+90,185 Woodhaven Ave,nil,Steinbach,MB R5G 1K7,3
+91,523-1st Street N,Box 250,Reston,MB R0M 1X0,4
+92,525 Victoria Ave E,nil,Brandon,MB R7A 6S9,3
+93,1375 Molson St,nil,Winnipeg,MB R2K 4K8,3
+94,735 St Anne's Rd,nil,Winnipeg,MB R2N 0C4,3
+95,512 Quebec St.,Box 428,Rivers,MB R0K 1X0,4
+96,One Morley Avenue,nil,Winnipeg,MB R3L 2P4,3
+97,115 Brown St,nil,Pilot Mound,MB R0G 1P0,3
+98,513 1st Ave North,nil,Stonewall,MB R0C 2Z0,3
+99,Box 40,166 Parkview Dr,Rossburn,MB R0J 1V0,4
+100,113 Arsini Street E,Bag Service #2,Russell,MB R0J 1W0,4
+101,165 15th St,nil,Winkler,MB R6W 1T8,3
+102,Box 7,106 1st St SW,Sandy Lake,MB R0J 1X0,4
+103,223 Hargrave Street E.,Box 2000,Virden,MB R0M 2C0,4
+104,100 Lakeshore Dr,nil,Snow Lake,MB R0B 1M0,3
+105,155 Brindle Ave,nil,Souris,MB R0K 2C0,3
+106,1265 Lee Blvd,nil,Winnipeg,MB R3T 2M3,3
+107,PO Box 400,33 Roy St,Saint Claude,MB R0G 1Z0,4
+108,1149 Leila Ave,nil,Winnipeg,MB R2P 1S6,3
+109,50 St. Pierre Street,nil,Winnipeg,MB R3V 1J6,3
+110,703 Jackson St,nil,Dauphin,MB R7N 2N2,3
+111,34 2nd St W,nil,The Pas,MB R9A 1K4,3
+112,PO Box 2000,Pine Falls,MB,R0E 1M0,4
+113,334 8th St.,nil,Box 1390,Swan River MB R0L 1Z0,3
+114,1013 Main St.,Box 1450,Swan River,MB R0L 1Z0,4
+115,450 Loren Dr,nil,Morden,MB R6M 0E3,3
+116,276 Hugo St N,nil,Winnipeg,MB R3M 2N6,3
+117,1 Falcon Ridge Dr,nil,Winnipeg,MB R3Y 1V9,3
+118,175 Dennis St,nil,Gladstone,MB R0J 0T0,3
+119,64 Clark St,nil,Treherne,MB R0G 2V0,3
+120,86 Ellis Dr,nil,Killarney,MB R0K 1G0,3
+121,800 Manitoba Ave,nil,Selkirk,MB R1A 2C9,3
+122,2060 Corydon Ave,nil,Winnipeg,MB R3P 0N3,3
+123,3015 Victoria Ave,nil,Brandon,MB R7B 2K2,3
+124,15 Charrière Rd,nil,Sainte-Anne-des-Chênes,MB R5H 1C9,3
+125,144 Novavista Dr,nil,Winnipeg,MB R2N 1P8,3
+126,217 1st Ave,nil,Vita,MB R0A 2K0,3
+127,Box 309,506 George St,Wawanesa,MB ROK 2G0,4
+128,3199 Grant Ave,nil,Winnipeg,MB R3R 1X2,3
+129,427 Frame Street E.,Box 1630,Virden,Manitoba R0M 2C0,4
+130,200 Struthers St,nil,Boissevain,MB R0K 0E0,3
+131,PO Box 160,75 Hospital Street,Whitemouth,Manitoba R0E 2G0,4
+132,Box 280,nil,Winnipegosis,MB R0L 2G0,3
+133,Box 69,nil,Dominion City,MB R0A 0H0,3
+134,Box 99,401 3rd Avenue,Reston,MB R0M 1X0,4
+135,320 Pipeline Rd,nil,Winnipeg,MB R2P 2X5,3
+136,880 Arlington St,nil,Winnipeg,MB R3E 2E4,3
+137,27B Third St S,nil,Beausejour,MB R0E 0C0,3
+138,4025 Roblin Blvd,nil,Winnipeg,MB R3R 3V5,3
+139,700 Bowles Street North,nil,Cartwright,MB R0K 0L0,3
+140,122 Manitoba Ave E,nil,Russell,MB R0J 1W0,3
+141,445 Stafford St #100,nil,Winnipeg,MB R3M 3V9,3
+142,482 Wilson St,nil,Steinbach,MB R5G 0J5,3
+143,75 McIntosh St E,nil,Lac du Bonnet,MB R0E 1A0,3
+144,120-4th Avenue Southwest,nil,Carman,MB R0G 0J0,3
+145,100-330 Stone Bridge Cross,nil,Steinbach,MB R5G 0X3,3
+146,741 Sterling Lyon Pkwy,nil,Winnipeg,MB R3P 2S9,3
+147,60 Buffalo Trail,nil,Altona,MB R0G 0B2,3
+148,#55 Gaslight Dr.,nil,Morden,MB R6M 2E1,3
+149,300 Tudor Road,nil,Selkirk,MB R1A 2G6,3
+150,520 1st Ave,nil,Carberry,MB R0K 0H0,3
+151,6 Arnitt Street,nil,Strathclair,MB R0J 2C0,3
+152,190 Raymond Pl,nil,Winnipeg,MB R2H 1C8,3
+153,17 Centre Ave E,nil,Altona,MB R0G 0B1,3
+154,14 St Hilaire Street,nil,St. Malo,MB R0A 1T0,3
+155,100 – 1125 Molson St,nil,Winnipeg,MB R2K 0A7,3
+156,100 – 1115 Molson Street,nil,Winnipeg,MB R2K 2N5,3
+157,100 – 1105 Molson Street,nil,Winnipeg,MB R2K 4G4,3
+158,Box 1000,nil,24 Mill St,Gladstone MB R0J 0T0,3
+159,114 2nd St S,nil,Souris,MB R0K 2C0,3
+160,52-59 Grenant,nil,Onanole,MB R0J 1N0,3
+161,134 Railway Ave,nil,Cypress River,MB R0K 0P0,3
+162,1145 Dakota St,nil,Winnipeg,MB R2N 0A4,3
+163,502 S Railway Ave W,nil,Deloraine,MB R0M 0M0,3
+164,75 Kildonan Green Dr,nil,Winnipeg,MB R3W 0E1,3
+165,65 Kildonan Green Dr,nil,Winnipeg,MB R3W 0B3,3
+166,165 Donwood Dr,nil,Winnipeg,MB R2G 2H9,3
+167,1245 Henderson Hwy,nil,Winnipeg,MB R2G 1M1,3
+168,1460 Portage Ave,nil,Winnipeg,MB R3G 3M9,3
+169,121 Johnson St,nil,Minto,MB R0K 1M0,3
+170,300 7th Ave S,nil,Swan River,MB R0L 1Z0,3
+171,115 Dominion St,nil,Emerson,MB R0A 0L0,3
+172,13-525 Cathcart St,nil,Winnipeg,MB R3R 0S6,3
+173,129 Arsini St E,nil,Russell,MB R0J 1W0,3
+174,40 Elkhorn Service Rd,nil,Elkhorn,MB R0M 0N0,3
+175,555 Ellice Ave,nil,Winnipeg,MB R3B 3C4,3
+176,735 Dugald Rd,nil,Dugald,MB R0E 0K0,3
+177,257 Hargrave St,nil,Virden,MB R0M 2C0,3
+178,120-10th Avenue North,nil,Swan River,MB R0L 1Z0,3
+179,303 3rd St,nil,Steinbach,MB R5G 1K1,3
+180,200 Horace St,nil,Winnipeg,MB R2H 0W5,3
+181,141 Baskerville Ave W,Box 74,Dominion City,MB R0A0H0,4
+182,1280,1290 & 1300 Aberdeen Ave.,Winnipeg,MB R2X 0X3,4
+183,1286 Aberdeen Ave.,nil,Winnipeg,MB R2X 0B8,3
+184,235 8th Ave NE,nil,Altona,MB R0G 0B0,3
+185,650 Pembina Ave,nil,Winkler,MB R6W 1J1,3
+186,169 Beach Rd,nil,Teulon,MB R0C 3B0,3
+187,307 Lyall St,nil,Glenboro,MB R0K 0X0,3
+188,107 - 250 Main St,nil,Steinbach,MB R5G 1Y8,3
+189,15 Arctic Dr,nil,Thompson,MB R8N 1S5,3
+190,212 Firehall St.,nil,Newdale,MB R0J 1J0,3
+191,102 - 346 6th Street,nil,Winkler,MB R6W 4C6,3
+192,203 8 Ave S,nil,Swan River,MB R0L 1Z0,3
+193,Box 14 Spruce Cres,nil,Rosenort,MB R0G 1W0,3
+194,36 1st Ave,nil,Austin,MB R0H 0C0,3
+195,244 Main St,nil,Winkler,MB R6W 2L8,3
+196,333 15th Street,nil,Brandon,MB R7A 6P4,3
+197,1145 Dakota St,nil,Winnipeg,MB R2N 0A4,3
+198,400 Loren Dr,nil,Morden,MB R6M 0E2,3
+199,MB-68,nil,Arborg,MB R0C 0A0,3
+200,64 Main St. North,nil,Riverton,MB R0C 2R0,3
+201,139 Blighty St,nil,Inglis,MB R0J 0X0,3
+202,Isabel Ave W,nil,Kelwood,MB R0J 0Y0,3
+203,216 Edison Ave,nil,Winnipeg,MB R2G 4H7,3
+204,104 3 St NW,nil,Portage la Prairie,MB R1N 2C2,3
+205,275 N Railway St,nil,Morden,MB R6M 2C7,3
+206,265 N Railway St,nil,Morden,MB R6M 1W5,3
+207,83 Dennis St,nil,Gladstone,MB R0J 0T0,3
+208,475 Lindenwood Dr. E.,nil,Winnipeg,MB R3P 2P3,3
+209,490 Lindenwood Dr. E.,nil,Winnipeg,MB R3P 0Y5,3
+210,320 Sherbrook St,nil,Winnipeg,MB R3B 2W6,3
+211,405 6th Ave SE,nil,Dauphin,MB R7N 2C9,3
+212,321 Avenue De la Cathédrale,nil,Winnipeg,MB R2H 0A3,3
+213,115- 3rd St,nil,Winnipegosis,MB R0L 2G0,3
+214,341 Ingolfs St,nil,Arborg,MB R0C 0A0,3
+215,2300 Ness Ave,nil,Winnipeg,MB R3J 1A2,3
+216,525 1 Ave,nil,Neepawa,MB R0J 1H0,3
+217,156 N Railway Ave,nil,Miniota,MB R0M 1M0,3
+218,177 Woodhaven Ave,nil,Steinbach,MB R5G 1K7,3
+219,125 Portsmouth Blvd,nil,Winnipeg,MB R3P 2M3,3
+220,50 Ridgecrest Avenue,nil,Winnipeg,MB R2V 4Z4,3
+221,2701 Scotia St,nil,Winnipeg,MB R2V 5A5,3
+222,4525 Victoria Ave,nil,Brandon,MB R7B 4A6,3
+223,180 Worthington Ave,nil,Winnipeg,MB R2M 1S4,3
+224,1778 Pembina Hwy,nil,Winnipeg,MB R3T 1R2,3
+225,Railway Ave,Main St. W,Rorketon,MB R0L 1X0,4
+226,424 Westwood Dr,nil,Thompson,MB R8N 0G9,3
+227,Unit E – 1340 10th Street,nil,Brandon,MB R7A 6Z3,3
+228,1015 St Anne's Rd,nil,Winnipeg,MB R2N 0E6,3
+229,316 Christie Av,nil,Selkirk,MB R1A 2L6,3
+230,905 Shaftesbury Blvd,nil,Winnipeg,MB R3P 0Y3,3
+231,30 13th St N,nil,Brandon,MB R7A 6T1,3
+232,200 – 628 Main St,nil,Oakbank,MB R0E 1J0,3
+233,14 6th Ave NW,nil,Dauphin,MB R7N 1J6,3
+234,100 Cruise Crescent,nil,Dauphin,MB R7N 3L6,3
+235,1015 Grant Avenue,nil,Winnipeg,MB R3M 1Y3,3
+236,909 Wilkes Ave,nil,Winnipeg,MB R3P 2S5,3
+237,622 Centre av,nil,Stonewall,MB R0C 2Z0,3
+238,646 James Avenue,nil,Beausejour,MB R0E 0C0,3
+239,PO Box 125,nil,Belmont,MB R0K 1C0,3
+240,10 Hallonquist Drive,nil,Winnipeg,MB R2Y 2M5,3
+241,707 Setter St,nil,Winnipeg,MB R2Y 0A4,3
+242,100-45 Boulton Bay,nil,Winnipeg,Manitoba R3N 2C3,3
+243,235 5th St NE,nil,Altona,MB R0G 0B7,3
+244,140 10th Ave NE,nil,Altona,MB R0G 0B7,3
+245,223 5th St NE,nil,Altona,MB R0G 0B7,3
+246,263 5th St NE,nil,Altona,MB R0G 0B7,3
+247,40 Vanier Ave,nil,Pinawa,MB R0E 1L0,3
+248,85 Paget St,nil,Winnipeg,MB R3P 0Y8,3
+249,857 Wilkes Ave,nil,Winnipeg,MB R3P 2M2,3
+250,3161 Grant Ave,nil,Winnipeg,MB R3R 3R1,3
+251,3033 Portage Ave,nil,Winnipeg,MB R3K 2E3,3
+252,10 Victoria Ave E,nil,Brandon,MB R7A 1Y8,3
+253,601 Rue Aulneau #10,nil,Winnipeg,MB R2H 2V5,3
+254,433 River Ave,nil,Winnipeg,MB R3L 2V1,3
+255,15 Charrière Road,nil,Sainte-Anne-des-Chênes,MB R5H 1C9,3
+256,Home 49 Radaz St,nil,St. Claude,MB R0G 1Z0,3
+257,387 Annie St,nil,Selkirk,MB R1A 3Y8,3
+258,880 Arlington St,nil,Winnipeg,MB R3E 2E4,3
+259,510 Wilson St,nil,Steinbach,MB R5G 1J9,3
+260,Box 1010,14 St. Hilaire St.,Saint Malo,MB R0A 1T0,4
+261,187 Avenue de la Cathédrale,nil,Winnipeg,MB R2H 3C6,3
+262,100 The Promenade,nil,Winnipeg,MB R3B 3H9,3
+263,231 Park Street,Box 1249,Grunthal,MB R0A 0R0,4
+264,116 Whitmore Ave W,nil,Dauphin,MB R7N 2S7,3
+265,1385 Molson St,nil,Winnipeg,MB R2K 1E4,3
+266,51 Parish Lane PO Box 433,nil,St. Laurent,MB R0C 2S0,3
+267,151 Rue Despins,nil,Winnipeg,MB R2H 0L7,3
