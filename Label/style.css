@@ -5,7 +5,8 @@
 
 }
 .label {
-    font-family: Verdana;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.5;
     font-weight: bold;
     vertical-align: middle;
     display: inline-block;
