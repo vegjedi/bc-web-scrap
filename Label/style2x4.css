@@ -1,6 +1,8 @@
+/* style for labels size 2 x 4 inches */
+
 @page {
     width: 101.6mm;
-    height: 25.4mm;
+    height: 50.8mm;
     padding: 0.0mm;
 
 }
@@ -11,8 +13,8 @@
     vertical-align: middle;
     display: inline-block;
     font-size: 11px;
-    margin-left: 6mm;
-    margin-right: 6mm;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 20%;
+    margin-bottom: 20%;
 }
