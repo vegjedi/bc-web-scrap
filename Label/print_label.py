@@ -21,6 +21,6 @@ for i in range(len(name)):
     temp_dict = dict(facility_name = (name[i].upper()).replace(".","").strip(), add_line_1= (line_1[i].upper()).replace(".", "").strip(), add_line_2 = (line_2[i].upper()).replace(".", "").strip())
     records.append(temp_dict)
 
-label_writer = LabelWriter("item_template.html", default_stylesheets=("style.css",))
+label_writer = LabelWriter("item_template.html", default_stylesheets=("style2x10.css",))
 
 label_writer.write_labels(records, target='/Users/jedi/Desktop/qrcode_and_label.pdf')

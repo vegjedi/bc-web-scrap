@@ -1,0 +1,18 @@
+@page {
+    width: 101.6mm;
+    height: 25.4mm;
+    padding: 0.0mm;
+
+}
+.label {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.5;
+    font-weight: bold;
+    vertical-align: middle;
+    display: inline-block;
+    font-size: 11px;
+    margin-left: 6mm;
+    margin-right: 6mm;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
