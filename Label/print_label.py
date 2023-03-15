@@ -1,5 +1,5 @@
 # author: Minh
-# date: Jan 16 2023
+# date: Mar 14 2023
 
 import pandas as pd
 from blabel import LabelWriter
@@ -12,6 +12,10 @@ line_2 = df.line_2.tolist()
 records = []
 name_1 = []
 name_2 = []
+
+# for i in range(len(name)):
+#     if type(name[i]) != str:
+#         print(name[i], i)
 
 for i in range(len(name)):
     temp_dict = dict(facility_name = (name[i].upper()).replace(".","").strip(), add_line_1= (line_1[i].upper()).replace(".", "").strip(), add_line_2 = (line_2[i].upper()).replace(".", "").strip())
